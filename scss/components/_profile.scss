@@ -1,0 +1,38 @@
+/*Profile*/  
+.container {
+    @include container;
+    .subtitle {
+        @include subtitle;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 550px;
+        gap: 2rem;
+        .profile__picture {
+            padding-left: 1rem;
+            .profile__img {
+                width: 300px;
+                height: 450px;
+                box-shadow: 2px 4px 8px rgb(154, 152, 152);
+            }
+        }
+        .profile__texts{
+            width: 100%;
+            .profile__list{
+                list-style: none;
+                padding-left: 2rem;
+                line-height: 2;
+                font-size: 1.4rem;
+                color: $color-primary;
+                .profile__items{
+                    font-weight: 500;
+                    .profile__span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.grid-trajectory{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 20px;
+
+    .trajectory__list{
+        font-size: 1.4rem;
+        line-height: 2;
+        color: $color-primary;
+    }
+    .trajectory__list--left{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .trajectory__list--right{
+        grid-column: 3/5;
+        grid-row: 3/5;
+        justify-self: end;
+        margin-right: 2rem;
+    }
+    
+    .trajectory__picture {
+        width: 50%;
+        .trajectory__img{
+            width: 100%;
+        }
+    }
+    .trajectory__picture--right{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .trajectory__picture--left{
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+
+}

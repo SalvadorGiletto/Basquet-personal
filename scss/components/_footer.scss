@@ -1,0 +1,26 @@
+/*footer*/  
+.footer {
+    background-color: $color-primary;
+    color: #fff;
+    .flex-footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        .icon-container{
+            .footer__link{
+                text-decoration: none;
+                color: #fff;
+                .footer__icon{
+                    margin-left: 1rem;
+                    font-size: 2rem;
+                }
+                .footer__icon--fontsize{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+    }
+}
