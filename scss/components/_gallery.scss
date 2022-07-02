@@ -8,7 +8,7 @@
         }
         .gallery__grid {
             margin-top: 3rem;
-            height: 550px;
+            height: auto;
             display: grid;
             grid-template-areas: 
             "img1 img2 img3"
@@ -50,6 +50,29 @@
             }
             .gallery__item6{
                 grid-area: img4;
+            }
+        }
+        .gallery__cta{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            
+            .gallery__link{
+                display: none;
+                text-decoration: none;
+                background-color: $color-secondary;
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding: 10px 15px;
+                border-radius: 5px;
+                box-shadow: 0 0 3px black;
+                &:hover{
+                    background-color: #fff;
+                    color: $color-secondary;
+                    transition: 0.2s;
+                }
             }
         }
         

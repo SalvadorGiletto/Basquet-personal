@@ -10,7 +10,7 @@
     background-attachment: fixed;  
 
 
-    /*para posicionar la wave despues*/
+    /*para posicionar la wave*/
     position: relative;
     .container{
         @include container;
@@ -34,7 +34,10 @@
                         color: #fff;
                         font-size: 1.3rem;
                         margin-right: 35px;
-                        font-weight: 500;
+                        font-weight: 400;
+                        &:hover{
+                            font-weight: 500;
+                        }
                     }
                 }
             }
@@ -43,8 +46,8 @@
             height: calc(100vh - 70px);
             width: 100%;
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: center;
             color: #fff;
             padding-left: 4rem;
             padding-bottom: 5rem;

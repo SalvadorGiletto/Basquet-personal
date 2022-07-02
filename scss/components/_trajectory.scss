@@ -11,6 +11,7 @@
         font-size: 1.4rem;
         line-height: 2;
         color: $color-primary;
+        list-style-position: inside;
     }
     .trajectory__list--left{
         grid-column: 1/3;
